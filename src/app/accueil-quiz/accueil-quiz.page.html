@@ -1,0 +1,36 @@
+<ion-content>
+
+    <div id="header_page">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="4" size-md (click)="onbackPress()">
+                    <ion-img id="imglogopage" src="assets/img/logo/back.png"> </ion-img>
+                </ion-col>
+                <ion-col size="4" size-md>
+
+                </ion-col>
+                <ion-col size="4" size-md>
+                    <ion-img id="imglogopage" src="assets/img/logo/logopage.png"> </ion-img>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md>
+                    <div id="container">
+                        <ion-card id="cardcontent" *ngFor="let TQuiz of typeQuiz" (click)="onTypeQuizClick(TQuiz.data)">
+                            <ion-card-content>
+                                <h2>
+                                    {{TQuiz.type}}
+                                </h2>
+                            </ion-card-content>
+                        </ion-card>
+
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

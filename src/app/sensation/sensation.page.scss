@@ -34,7 +34,7 @@ ion-content ion-toolbar {
 
 #titre_page {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 0%;
     //margin-bottom: 50px;
     font-weight: bold;
     font-size: 200%;
@@ -47,15 +47,15 @@ ion-content ion-toolbar {
 }
 
 #cardcontent {
-    background-color: #3daade;
+    //background-color: #555758;
     padding: 10px 0 10px 0;
     margin-top: 40px;
     border-radius: 0px;
-    color: white;
-    text-transform: uppercase;
+    color: black;
+    //text-transform: uppercase;
 }
 
-.card-content-md h2 {
+.card-content-md label {
     font-size: 20px !important;
     font-weight: bold;
 }
@@ -65,8 +65,21 @@ ion-content ion-toolbar {
     height: 60%;
     margin-left: 20%;
 }
-#bouton_contact{
-    background-color: #3daade;
-    padding: 10px 0 10px 0;
-    margin-top: 40px;
+
+#radiosensation {
+    width: 60px;
+    height: 60px;
+}
+
+ion-radio {
+    --color: #3daade;
+    --color-checked: #3daade;
+}
+#liste_sensation_titre{
+    font-size: 16px !important;
+    font-weight: bold;
+}
+#liste_radion_sensation{
+    align-content: center;
+    padding-left: 20px;;
 }

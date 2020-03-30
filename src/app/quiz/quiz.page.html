@@ -1,0 +1,37 @@
+<ion-content>
+
+    <div id="header_page">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="4" size-md (click)="onbackPress()">
+                    <ion-img id="imglogopage" src="assets/img/logo/back.png"> </ion-img>
+                </ion-col>
+                <ion-col size="4" size-md>
+
+                </ion-col>
+                <ion-col size="4" size-md>
+                    <ion-img id="imglogopage" src="assets/img/logo/logopage.png"> </ion-img>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+
+        <ion-grid id="contentGrid">
+            <ion-row>
+                <ion-col size="12" size-md>
+                    <div id="container">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col size="6" size-md *ngFor="let quiz of lesQuizs" (click)="onQuizClick(quiz)">
+                                    <ion-img src="assets/img/quiz/animaux/grenouille.jpg"> </ion-img>
+                                    <ion-card>{{quiz.indice}}</ion-card>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

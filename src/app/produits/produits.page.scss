@@ -48,11 +48,15 @@ ion-content ion-toolbar {
 
 #cardcontent {
     background-color: #3daade;
-    padding: 10px 0 10px 0;
-    margin-top: 40px;
+    padding: 0px 0 0px 0;
+    margin-top: 55px;
     border-radius: 0px;
     color: white;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+}
+
+#imagelisteitem {
+    background-color: #3daade;
 }
 
 .card-content-md h2 {
@@ -65,8 +69,30 @@ ion-content ion-toolbar {
     height: 60%;
     margin-left: 20%;
 }
-#bouton_contact{
-    background-color: #3daade;
-    padding: 10px 0 10px 0;
-    margin-top: 40px;
+
+#imgproduit {
+    padding: 0px 0px 0px 0px;
+}
+#imgprd{
+   /* height: 140%;
+    width: 140%;
+    max-width: 140% !important;*/
+}
+#descproduit {
+    text-align: left;
+    height: 50%;
+}
+#nom_produit{
+    font-weight: bold;
+    font-size: 110%;
+}
+#ligne_separator{
+    height: 1px;
+    color: white;
+    background-color: white;
+}
+#sous_desc_produit{
+    //white-space : nowrap; //permet de forcer le non retour à la ligne
+    overflow : hidden; //permet de masquer si ça dépasse
+    text-overflow : ellipsis; //permet de rajouter ... si ça dépasse
 }

@@ -5,7 +5,7 @@
     right: 0;
     top: 0%;
     //transform: translateY(-50%);
-    margin: 0px 60px 0px 60px;
+    margin: 0px 0px 0px 0px;
 }
 
 ion-content {
@@ -34,10 +34,10 @@ ion-content ion-toolbar {
 
 #titre_page {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 50px;
     //margin-bottom: 50px;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 40px;
     color: #064a7f;
 }
 
@@ -49,10 +49,10 @@ ion-content ion-toolbar {
 #cardcontent {
     background-color: #3daade;
     padding: 10px 0 10px 0;
-    margin-top: 40px;
+    margin-top: 0px;
     border-radius: 0px;
     color: white;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 .card-content-md h2 {
@@ -65,8 +65,31 @@ ion-content ion-toolbar {
     height: 60%;
     margin-left: 20%;
 }
-#bouton_contact{
+
+#produitname {
+    color: white;
+    height: 50px;
+}
+#produitname h1 {
+    margin-top: -10px;
+}
+#produit_desc{
+    font-size: 110%;
+    text-align: justify;
+    color: white;
+}
+#produit_desc_avantage{
+    font-size: 120%;
+    text-align: left;
+    color: white;
+    padding-left: 10%;
+}
+#liste_sous_carctsq{
     background-color: #3daade;
-    padding: 10px 0 10px 0;
-    margin-top: 40px;
+    color: white;
+}
+#ligne_separator{
+    height: 1px;
+    color: white;
+    background-color: white;
 }

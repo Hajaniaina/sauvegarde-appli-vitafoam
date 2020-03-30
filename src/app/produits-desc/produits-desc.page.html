@@ -1,0 +1,54 @@
+<ion-content>
+
+    <div id="header_page">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="4" size-md (click)="onbackPress()">
+                    <ion-img id="imglogopage" src="assets/img/logo/back.png"> </ion-img>
+                </ion-col>
+                <ion-col size="4" size-md>
+
+                </ion-col>
+                <ion-col size="4" size-md>
+                    <ion-img id="imglogopage" src="assets/img/logo/logopage.png"> </ion-img>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md>
+                    <div id="container">
+                        <ion-card id="cardcontent">
+                            <ion-card-header id="produitname">
+                                <h1>{{prodDesc.pord}}</h1>
+                            </ion-card-header>
+                                <ion-img src="https://media.conforama.fr/Medias/600000/80000/9000/400/20/G_689425_A.jpg"></ion-img>
+                            <ion-card-content>
+                                <div id="produit_desc">{{prodDesc.desc}}</div> 
+                                <ion-list *ngFor="let caract of prodDesc.desc_caracteristique" id="liste_sous_carctsq">
+                                        <div id="produit_desc_avantage"><ion-icon name="add-outline"></ion-icon>{{caract}}</div>
+                                </ion-list>
+                            </ion-card-content>
+                            <ion-card-content>
+                                <hr id="ligne_separator" />
+                            </ion-card-content>
+                            <ion-card-header>
+                                <ion-row>
+                                    <ion-col>
+                                    </ion-col>
+                                    <ion-col (click)="onACtionProduitClic()">
+                                        <ion-icon size="large" color="light" name="apps-outline"></ion-icon>
+                                    </ion-col>
+                                    <ion-col>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-card-header>
+                        </ion-card>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

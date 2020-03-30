@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+
+    <div id="header_page">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="4" size-md (click)="onbackPress()">
+                    <ion-img id="imglogopage" src="assets/img/logo/back.png"> </ion-img>
+                </ion-col>
+                <ion-col size="4" size-md>
+
+                </ion-col>
+                <ion-col size="4" size-md>
+                    <ion-img id="imglogopage" src="assets/img/logo/logopage.png"> </ion-img>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md id="titre_page">
+                    Vous cherchez un matelas pour:
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md>
+                    <div id="container">
+                        <ion-card (click)="onEnfantClick()" id="cardcontent">
+                            <ion-card-content>
+                                <h2>Un enfant (-16 ans)</h2>
+                            </ion-card-content>
+                        </ion-card>
+                        <ion-card (click)="onPersonneAgeeClick()" id="cardcontent">
+                            <ion-card-content>
+                                <h2>Une personne agée</h2>
+                            </ion-card-content>
+                        </ion-card>
+                        <ion-card (click)="onFemmeAceinteClick()" id="cardcontent">
+                            <ion-card-content>
+                                <h2> Une femme aceinte </h2>
+                            </ion-card-content>
+                        </ion-card>
+                        <ion-card (click)="onPersonneAlliteClic()" id="cardcontent">
+                            <ion-card-content>
+                                <h2> Une personne allitée</h2>
+                            </ion-card-content>
+                        </ion-card>
+                        <ion-card (click)="onAdulteClic()" id="cardcontent">
+                            <ion-card-content>
+                                <h2> Un adulte </h2>
+                            </ion-card-content>
+                        </ion-card>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

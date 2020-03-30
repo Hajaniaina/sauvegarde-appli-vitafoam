@@ -3,7 +3,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0%;
+    top: 100%;
     //transform: translateY(-50%);
     margin: 0px 60px 0px 60px;
 }
@@ -34,10 +34,10 @@ ion-content ion-toolbar {
 
 #titre_page {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 50px;
     //margin-bottom: 50px;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 40px;
     color: #064a7f;
 }
 
@@ -49,7 +49,7 @@ ion-content ion-toolbar {
 #cardcontent {
     background-color: #3daade;
     padding: 10px 0 10px 0;
-    margin-top: 40px;
+    margin-top: 80px;
     border-radius: 0px;
     color: white;
     text-transform: uppercase;
@@ -61,12 +61,21 @@ ion-content ion-toolbar {
 }
 
 #imglogopage {
-    width: 60%;
-    height: 60%;
+    width: 100px;
+    height: 100px;
     margin-left: 20%;
 }
-#bouton_contact{
-    background-color: #3daade;
-    padding: 10px 0 10px 0;
-    margin-top: 40px;
+
+#imageQuiz {
+    width: 100px;
+    height: 100px;
+    margin-left: 20%;
+}
+
+#contentGrid {
+    margin-top: 5%;
+}
+
+#QuizSuivant {
+    margin-top: 74%;
 }
