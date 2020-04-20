@@ -1,0 +1,48 @@
+<ion-content>
+
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+
+  <div id="header_page">
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4" size-md (click)="onbackPress()">
+                  <ion-img id="imglogopage" src="assets/img/logo/back.png"> </ion-img>
+              </ion-col>
+              <ion-col size="4" size-md>
+
+              </ion-col>
+              <ion-col size="4" size-md>
+                  <ion-img id="imglogopage" src="assets/img/logo/logopage.png"> </ion-img>
+              </ion-col>
+
+          </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+            <ion-col size="12" size-md id="titre_page">
+                Quels showroom souhetez vous évaluer ?
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+      <ion-grid id="contentGrid">
+          <ion-row>
+              <ion-col size="12" size-md>
+                  <div id="container">
+                      <ion-grid>
+                          <ion-row>
+                              <ion-col size="6" size-md *ngFor="let sRoom of listeShowRoom" (click)="onShowRoomClick(sRoom)">
+                                  <ion-img mode="ios" src="assets/img/showroom/showroomevaluation.jpg"> </ion-img>
+                                  <ion-card mode="ios" style="padding: 8px 0 8px 0;"> <div id="nomShowRomm">{{sRoom.showroom}}</div> </ion-card>
+                              </ion-col>
+                          </ion-row>
+                      </ion-grid>
+
+                  </div>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+  </div>
+</ion-content>

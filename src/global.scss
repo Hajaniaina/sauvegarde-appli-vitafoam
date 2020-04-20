@@ -24,3 +24,9 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.action-sheet-title.sc-ion-action-sheet-ios {
+    text-transform: uppercase;
+    font-size: 22px !important;
+    font-weight: bold;;
+}

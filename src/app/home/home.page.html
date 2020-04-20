@@ -1,4 +1,7 @@
 <ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
 
     <div id="header_page">
         <ion-grid>
@@ -43,7 +46,7 @@
             </ion-row>
         </ion-grid>
     </div>
-    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed" (click)="showContactPageModal()">
         <ion-fab-button>
             <ion-icon name="call-outline"></ion-icon>
         </ion-fab-button>

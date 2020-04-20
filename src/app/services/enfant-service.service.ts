@@ -439,7 +439,7 @@ export class EnfantServiceService {
   async loadingPage(loadingController:LoadingController){
     const loading = await loadingController.create({
       message: 'Please wait...',
-      duration: 500,
+      duration: 300,
       //message: 'Click the backdrop to dismiss early...',
       translucent: true,
       cssClass: 'custom-class custom-loading',

@@ -52,6 +52,18 @@ const routes: Routes = [
     path: 'quiz-show-response',
     loadChildren: () => import('./quiz-show-response/quiz-show-response.module').then( m => m.QuizShowResponsePageModule)
   },
+  {
+    path: 'evaluation-show-room',
+    loadChildren: () => import('./evaluation-show-room/evaluation-show-room.module').then( m => m.EvaluationShowRoomPageModule)
+  },
+  {
+    path: 'voter-show-room',
+    loadChildren: () => import('./voter-show-room/voter-show-room.module').then( m => m.VoterShowRoomPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
 ];
 
 @NgModule({

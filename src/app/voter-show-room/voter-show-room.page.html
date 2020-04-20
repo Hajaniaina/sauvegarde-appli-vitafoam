@@ -1,0 +1,52 @@
+<ion-content fullscreen>
+
+  <div id="header_page">
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4" size-md (click)="onbackPress()">
+                  <ion-img id="imglogopage" src="assets/img/logo/back.png"> </ion-img>
+              </ion-col>
+              <ion-col size="4" size-md>
+
+              </ion-col>
+              <ion-col size="4" size-md>
+                  <ion-img id="imglogopage" src="assets/img/logo/logopage.png"> </ion-img>
+              </ion-col>
+
+          </ion-row>
+      </ion-grid>
+      
+      <ion-grid id="contentGrid">
+          <ion-row>
+              <ion-col size="12" size-md>
+                  <div id="container">
+                      <ion-grid>
+                          <ion-row>
+                              <ion-card mode="ios">
+                                
+                                <ion-card-header>
+                                  <ion-card-title id="nomShowRomm">{{listeVoteUnShowRoom.showroom}}</ion-card-title>
+                                  <br/>
+                                  <img src="assets/img/quiz/animaux/grenouille.jpg" />
+                                  <div id="titre_page">Comment avez-vous trouvé l’accueil des commerciaux ?</div>
+                                </ion-card-header>
+                                <ion-card-content>
+                                  <ion-list>
+                                    <ion-radio-group value="" mode="md">
+                                      <ion-item *ngFor="let choix of listeVoteUnShowRoom.vote.options" >
+                                        <ion-label id="optionchoix">{{choix}}</ion-label>
+                                        <ion-radio slot="start" value="{{choix}}"></ion-radio>
+                                      </ion-item>
+                                    </ion-radio-group>
+                                  </ion-list>
+                                </ion-card-content>
+                              </ion-card>
+                          </ion-row>
+                      </ion-grid>
+
+                  </div>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+  </div>
+</ion-content>
